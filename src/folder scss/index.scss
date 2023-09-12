@@ -1,6 +1,70 @@
 @import "color";
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
 
+// start public
 body {
     font-family: 'Almarai', sans-serif;
+    text-transform: capitalize;
+    background-color: $color_body;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $color_gold;
+}
+
+// end public
+// start navbar
+.colorheaderfooter {
+    background-color: $color_navbar;
+}
+
+body header .container div ul li .active {
+    color: $color_gold !important;
+}
+
+body header .container div ul li .nav-link:hover {
+    color: $color_gold !important;
+}
+
+// end navbar
+// start users
+.image_close {
+    cursor: pointer;
+}
+
+.users_hover {
+    width: 35px;
+    height: 35px;
+}
+
+.users_hover:hover {
+    background-color: $color_button !important;
+}
+
+// end users
+// start add
+.row_gap1 {
+    row-gap: 22px;
+}
+
+.input_color {
+    background-color: $color_input;
+}
+
+.input_color::placeholder {
+    color: $color_navbar;
+}
+
+.color_red {
+    color: $color_button;
+}
+
+.input_submit {
+    background-color: $color_button;
+}
+// end add
