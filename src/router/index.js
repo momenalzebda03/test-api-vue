@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import PageWelcome from "../views/PageWelcome.vue";
 import PageUsers from "../views/PageUsers.vue";
-import Pageadd from "../views/PageAdd.vue";
-import Pageupdate from "../views/PageUpdate.vue";
+import updateadd from "@/components/ComponentUpdateAdd.vue";
+import Pageupdate from "@/components/ComponentUpdateAdd.vue";
 
 const routes = [
   {
@@ -22,7 +22,7 @@ const routes = [
     },
   },
   {
-    path: "/update",
+    path: "/update/:id",
     name: "update",
     component: Pageupdate,
     meta: {
@@ -30,11 +30,11 @@ const routes = [
     },
   },
   {
-    path: "/add",
-    name: "add",
-    component: Pageadd,
+    path: "/updateadd",
+    name: "updateadd",
+    component: updateadd,
     meta: {
-      title: "Page add",
+      title: "Page update and add",
     },
   },
 ];

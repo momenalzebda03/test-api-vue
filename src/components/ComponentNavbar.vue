@@ -14,13 +14,9 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link text-white" to="/add" :class="{ 'active': isActive('add') }">
-              add users
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link text-white" to="/update" :class="{ 'active': isActive('update') }">
-              update users
+            <router-link class="nav-link text-white" to="/updateadd"
+              :class="{ 'active': isActive('updateadd') || isActive('update', { id }) }">
+              add
             </router-link>
           </li>
         </ul>
